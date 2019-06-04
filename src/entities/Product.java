@@ -5,10 +5,6 @@ public class Product {
 	private String name;
 	private Double price;
 
-	public Product() {
-
-	}
-
 	public Product(String name, Double price) {
 		this.name = name;
 		this.price = price;
@@ -31,7 +27,7 @@ public class Product {
 	}
 
 	public String priceTag() {
-		return name + " $ " + String.format("% .2f", price);
+		return name + " $ " + String.format("%.2f", price);
 
 	}
 
